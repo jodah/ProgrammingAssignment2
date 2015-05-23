@@ -1,7 +1,7 @@
-## Put comments here that give an overall description of what your
-## functions do
+## I simply used the pattern that was shown in the leadup to the assignment
+##  
+## This first function creates the matrix object that contains the methods for accessing and creating the matrix Object and its inverse.  Passing a matrix while instantiation will set the object (you can later change this by using the set method).  Callling setInverse will set the Object inverse, and getInverse will call the inverse.
 
-## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
 
@@ -21,7 +21,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## This method takes the matrix object. This will call the objects getInverse to get at its cashed inverted matrix.  If its not there then it will call the matrix with the get method, solve the returned matrix, set the objects inverted mtrix, then return the inversion for viewing.
 
 cacheSolve <- function(x, ...) {
          m <- x$getInverse()
